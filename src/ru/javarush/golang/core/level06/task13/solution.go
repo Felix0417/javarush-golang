@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main() {
+	var name string
+	var age int
+
+	fmt.Scan(&name, &age)
+
+	fmt.Printf("Hello, %s! Age=%d\n", name, age)
+}
