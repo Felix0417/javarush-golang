@@ -141,7 +141,6 @@ func main() {
 	in := bufio.NewReader(os.Stdin)
 	line, _ := in.ReadString('\n')
 	line = strings.TrimSpace(line)
-
 	parts := strings.Fields(line)
 	if len(parts) == 0 {
 		printErr(&OpError{Op: "Parse", Err: errors.New("empty command")})
